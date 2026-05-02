@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agropecuária Catarinense — O Campo que Alimenta o Mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">SC</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <p class="loader-text">Carregando o campo catarinense...</p>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="brand-sc">SC</span>
+      <span class="brand-label">Agropecuária</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#numbers"    class="nav-link">Números</a></li>
+      <li><a href="#regions"    class="nav-link">Regiões</a></li>
+      <li><a href="#products"   class="nav-link">Produtos</a></li>
+      <li><a href="#tech"       class="nav-link">Tecnologia</a></li>
+      <li><a href="#challenges" class="nav-link">Desafios</a></li>
+      <li><a href="#gallery"    class="nav-link">Galeria</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="#numbers">Números</a><a href="#regions">Regiões</a>
+    <a href="#products">Produtos</a><a href="#tech">Tecnologia</a>
+    <a href="#challenges">Desafios</a><a href="#gallery">Galeria</a>
+  </div>
+</nav>
+
+<!-- ═══ VIDEO SCROLL SCRUB HERO ═══ -->
+<div id="videoScrollWrapper">
+  <div id="videoStickyPanel">
+    <video id="bgVideo" src="assets/video-bg.mp4" muted playsinline preload="auto"
+      disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback"
+      oncontextmenu="return false"></video>
+    <div class="video-overlay"></div>
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <div class="vs-block" id="vsBlock0" data-from="0" data-to="0.25">
+      <div class="vs-tag"><span class="tag-dot"></span> Santa Catarina · Brasil</div>
+      <h1 class="vs-title">O Campo que<br/><em>Alimenta</em><br/>o Mundo</h1>
+      <p class="vs-sub">Pequeno no mapa. Gigante na produção.<br/>Role para descobrir.</p>
+      <div class="vs-scroll-hint">
+        <div class="scroll-wheel"><div class="scroll-wheel-dot"></div></div>
+        <span>Role para explorar</span>
+      </div>
+    </div>
+
+    <div class="vs-block" id="vsBlock1" data-from="0.22" data-to="0.48">
+      <div class="vs-tag"><span class="tag-dot"></span> Em números</div>
+      <h2 class="vs-heading">1,1% do<br/>território nacional.</h2>
+      <p class="vs-stat-line">
+        <em class="big-num">15%</em>
+        <span>das exportações brasileiras<br/>de proteína animal</span>
+      </p>
+    </div>
+
+    <div class="vs-block" id="vsBlock2" data-from="0.44" data-to="0.70">
+      <div class="vs-tag"><span class="tag-dot"></span> Liderança</div>
+      <h2 class="vs-heading">Três vezes<br/><em>#1</em> do Brasil.</h2>
+      <div class="vs-trio">
+        <div class="vs-trio-item">🍎 Maçã</div>
+        <div class="vs-trio-item">🧅 Cebola</div>
+        <div class="vs-trio-item">🐷 Suíno</div>
+      </div>
+    </div>
+
+    <div class="vs-block" id="vsBlock3" data-from="0.66" data-to="0.92">
+      <div class="vs-tag"><span class="tag-dot"></span> Economia</div>
+      <h2 class="vs-heading"><em class="big-num">R$&nbsp;50bi</em><br/>movimentados por ano.</h2>
+      <p class="vs-sub">~30% do PIB catarinense vem do campo.</p>
+    </div>
+
+    <div class="vs-block" id="vsBlock4" data-from="0.88" data-to="1.0">
+      <div class="vs-tag"><span class="tag-dot"></span> Continue</div>
+      <h2 class="vs-heading">Explore o campo<br/>que alimenta<br/>o mundo.</h2>
+      <a href="#numbers" class="btn btn-primary vs-cta">Ver todos os dados ↓</a>
+    </div>
+
+    <div class="hero-badge">
+      <div class="badge-ring"></div>
+      <div class="badge-text"><span>#1</span><small>Maior produtor<br/>de maçã do Brasil</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ NUMBERS ═══ -->
+<section id="numbers">
+  <div class="section-header">
+    <div class="section-tag reveal-up">Em Números</div>
+    <h2 class="section-title reveal-up">Resultados que<br/><em>impressionam</em></h2>
+    <p class="section-sub reveal-up">Um estado de 95 mil km² que coloca comida na mesa de bilhões de pessoas.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card reveal-up" data-delay="0"><div class="stat-icon">🐷</div><div class="stat-number" data-target="6800" data-suffix="mil">0</div><div class="stat-label">Toneladas de carne suína exportadas por ano</div><div class="stat-rank">#1 do Brasil</div></div>
+    <div class="stat-card reveal-up" data-delay="80"><div class="stat-icon">🍎</div><div class="stat-number" data-target="700" data-suffix="mil ton">0</div><div class="stat-label">Toneladas de maçã produzidas anualmente</div><div class="stat-rank">#1 do Brasil</div></div>
+    <div class="stat-card reveal-up" data-delay="160"><div class="stat-icon">🧅</div><div class="stat-number" data-target="500" data-suffix="mil ton">0</div><div class="stat-label">Toneladas de cebola por ano</div><div class="stat-rank">#1 do Brasil</div></div>
+    <div class="stat-card reveal-up" data-delay="240"><div class="stat-icon">🐔</div><div class="stat-number" data-target="15" data-suffix="%">0</div><div class="stat-label">Das exportações brasileiras de proteína animal</div><div class="stat-rank">Em apenas 1,1% do território</div></div>
+    <div class="stat-card reveal-up" data-delay="320"><div class="stat-icon">💰</div><div class="stat-number" data-target="50" data-prefix="R$" data-suffix="bi">0</div><div class="stat-label">Movimentados pelo agronegócio por ano</div><div class="stat-rank">~30% do PIB estadual</div></div>
+    <div class="stat-card reveal-up" data-delay="400"><div class="stat-icon">🌾</div><div class="stat-number" data-target="87" data-suffix="%">0</div><div class="stat-label">Dos estabelecimentos são de agricultura familiar</div><div class="stat-rank">Força do pequeno produtor</div></div>
+  </div>
+</section>
+
+<!-- ═══ REGIONS ═══ -->
+<section id="regions">
+  <div class="section-header">
+    <div class="section-tag reveal-up">Mapa Regional</div>
+    <h2 class="section-title reveal-up">Cada região,<br/><em>uma vocação</em></h2>
+    <p class="section-sub reveal-up">A diversidade geográfica de SC é seu maior trunfo. Clique nas regiões para explorar.</p>
+  </div>
+  <div class="regions-layout">
+    <div class="map-wrapper reveal-left">
+      <div class="map-container">
+        <svg viewBox="0 0 500 420" class="sc-map" xmlns="http://www.w3.org/2000/svg">
+          <path class="map-region" data-region="oeste" d="M60,100 L180,90 L190,160 L185,220 L170,260 L80,270 L55,230 L50,170 Z" fill="var(--region-oeste)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="118" y="185" class="map-label">Oeste</text>
+          <path class="map-region" data-region="meio-oeste" d="M180,90 L270,85 L280,150 L285,200 L190,160 Z" fill="var(--region-meio)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="220" y="130" class="map-label">Meio-Oeste</text>
+          <path class="map-region" data-region="planalto" d="M270,85 L360,80 L370,140 L360,190 L285,200 L280,150 Z" fill="var(--region-planalto)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="310" y="140" class="map-label">Planalto</text>
+          <path class="map-region" data-region="vale" d="M280,150 L360,140 L390,190 L380,240 L285,200 Z" fill="var(--region-vale)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="325" y="195" class="map-label">Vale do Itajaí</text>
+          <path class="map-region" data-region="litoral-norte" d="M360,80 L430,90 L440,170 L390,190 L370,140 Z" fill="var(--region-litoral-n)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="395" y="138" class="map-label" style="font-size:8px">Litoral Norte</text>
+          <path class="map-region" data-region="sul" d="M190,160 L285,200 L380,240 L370,320 L320,360 L240,370 L180,340 L160,280 L170,260 L185,220 Z" fill="var(--region-sul)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="270" y="290" class="map-label">Sul</text>
+          <path class="map-region" data-region="floripa" d="M380,240 L440,230 L450,300 L420,340 L370,320 Z" fill="var(--region-floripa)" stroke="var(--bg)" stroke-width="2"/>
+          <text x="405" y="285" class="map-label" style="font-size:7px">Gr. Florianópolis</text>
+          <circle cx="118" cy="185" r="4" class="city-dot"/>
+          <circle cx="220" cy="145" r="4" class="city-dot"/>
+          <circle cx="310" cy="140" r="4" class="city-dot"/>
+          <circle cx="330" cy="200" r="4" class="city-dot"/>
+          <circle cx="270" cy="290" r="4" class="city-dot"/>
+          <circle cx="410" cy="275" r="4" class="city-dot"/>
+          <circle cx="400" cy="135" r="4" class="city-dot"/>
+        </svg>
+      </div>
+    </div>
+    <div class="region-info-panel reveal-right">
+      <div class="region-placeholder" id="regionPlaceholder"><div class="placeholder-icon">🗺️</div><p>Clique em uma região no mapa para ver detalhes</p></div>
+      <div class="region-detail" id="regionDetail" style="display:none">
+        <div class="rd-tag" id="rdTag"></div>
+        <h3 class="rd-title" id="rdTitle"></h3>
+        <p class="rd-desc" id="rdDesc"></p>
+        <div class="rd-products" id="rdProducts"></div>
+        <div class="rd-highlight" id="rdHighlight"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUCTS ═══ -->
+<section id="products">
+  <div class="section-header">
+    <div class="section-tag reveal-up">Principais Produtos</div>
+    <h2 class="section-title reveal-up">Do campo<br/><em>ao mundo</em></h2>
+    <p class="section-sub reveal-up">Produtos catarinenses que chegam à mesa de bilhões de pessoas em dezenas de países.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card tilt-card reveal-up" data-delay="0"><div class="pc-image"><img src="assets/images/suinos.jpg" alt="Suinocultura" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder');this.style.display='none'"/><div class="pc-img-fallback">🐷</div></div><div class="pc-rank">#1 do Brasil</div><div class="pc-content"><h3 class="pc-title">Suinocultura</h3><p class="pc-desc">O oeste catarinense é o maior polo suinícola do mundo. BRF, Aurora e Seara têm sede ou unidades centrais na região.</p><div class="pc-tags"><span>Chapecó</span><span>Concórdia</span><span>BRF · Aurora · Seara</span></div><div class="pc-bar"><div class="pc-bar-fill" style="--pct:92%"><span>Mercado nacional: 92%</span></div></div></div></div>
+    <div class="product-card tilt-card reveal-up" data-delay="80"><div class="pc-image"><img src="assets/images/frango.jpg" alt="Avicultura" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder');this.style.display='none'"/><div class="pc-img-fallback">🐔</div></div><div class="pc-rank">#2 do Brasil</div><div class="pc-content"><h3 class="pc-title">Avicultura</h3><p class="pc-desc">O frango catarinense voa para mais de 150 países. Maior frigorífico de aves do hemisfério sul está no meio-oeste.</p><div class="pc-tags"><span>Videira</span><span>Caçador</span><span>Exportação global</span></div><div class="pc-bar"><div class="pc-bar-fill" style="--pct:78%"><span>Exportações BR: 78%</span></div></div></div></div>
+    <div class="product-card tilt-card reveal-up" data-delay="160"><div class="pc-image"><img src="assets/images/maca.jpg" alt="Maçã" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder');this.style.display='none'"/><div class="pc-img-fallback">🍎</div></div><div class="pc-rank">#1 do Brasil</div><div class="pc-content"><h3 class="pc-title">Maçã</h3><p class="pc-desc">São Joaquim e Fraiburgo produzem as maçãs mais famosas do Brasil. O frio da serra cria condições únicas de cultivo.</p><div class="pc-tags"><span>São Joaquim</span><span>Fraiburgo</span><span>Clima serrano</span></div><div class="pc-bar"><div class="pc-bar-fill" style="--pct:95%"><span>Participação nacional: 95%</span></div></div></div></div>
+    <div class="product-card tilt-card reveal-up" data-delay="240"><div class="pc-image"><img src="assets/images/cebola.jpg" alt="Cebola" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder');this.style.display='none'"/><div class="pc-img-fallback">🧅</div></div><div class="pc-rank">#1 do Brasil</div><div class="pc-content"><h3 class="pc-title">Cebola</h3><p class="pc-desc">Ituporanga é a capital nacional da cebola. Cultura trazida por imigrantes alemães que virou tradição e orgulho do Alto Vale.</p><div class="pc-tags"><span>Ituporanga</span><span>Alto Vale</span><span>Tradição alemã</span></div><div class="pc-bar"><div class="pc-bar-fill" style="--pct:55%"><span>Participação nacional: 55%</span></div></div></div></div>
+    <div class="product-card tilt-card reveal-up" data-delay="320"><div class="pc-image"><img src="assets/images/arroz.jpg" alt="Arroz" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder');this.style.display='none'"/><div class="pc-img-fallback">🌾</div></div><div class="pc-rank">#3 do Brasil</div><div class="pc-content"><h3 class="pc-title">Arroz Irrigado</h3><p class="pc-desc">Planícies do sul catarinense com arroz de altíssima produtividade. Araranguá e Tubarão são referência nacional.</p><div class="pc-tags"><span>Araranguá</span><span>Tubarão</span><span>Arroz irrigado</span></div><div class="pc-bar"><div class="pc-bar-fill" style="--pct:62%"><span>Produtividade acima da média: 62%</span></div></div></div></div>
+    <div class="product-card tilt-card reveal-up" data-delay="400"><div class="pc-image"><img src="assets/images/leite.jpg" alt="Leite" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder');this.style.display='none'"/><div class="pc-img-fallback">🥛</div></div><div class="pc-rank">#5 do Brasil</div><div class="pc-content"><h3 class="pc-title">Pecuária Leiteira</h3><p class="pc-desc">Alta produtividade por vaca graças ao clima ameno e genética avançada. Planalto serrano e oeste lideram a produção.</p><div class="pc-tags"><span>Lages</span><span>Oeste SC</span><span>Genética avançada</span></div><div class="pc-bar"><div class="pc-bar-fill" style="--pct:48%"><span>Produtividade vs média BR: +48%</span></div></div></div></div>
+  </div>
+</section>
+
+<!-- ═══ TIMELINE ═══ -->
+<section id="timeline">
+  <div class="section-header">
+    <div class="section-tag reveal-up">História</div>
+    <h2 class="section-title reveal-up">Uma jornada de<br/><em>séculos</em></h2>
+  </div>
+  <div class="timeline-track">
+    <div class="timeline-line"></div>
+    <div class="tl-item tl-left reveal-left"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">Séc. XIX</div><h4>A chegada dos imigrantes</h4><p>Alemães e italianos chegam ao sul do Brasil trazendo sementes, técnicas e vontade de trabalhar. Fundam colônias que viriam a ser os maiores polos agropecuários do estado.</p></div></div>
+    <div class="tl-item tl-right reveal-right"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">1950–70</div><h4>A revolução suinícola</h4><p>O oeste se consolida como polo suinícola. Surgem as primeiras frigoríficas e cooperativas. O sistema de integração entre produtor e indústria começa a tomar forma.</p></div></div>
+    <div class="tl-item tl-left reveal-left"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">1970–90</div><h4>Expansão das exportações</h4><p>Sadia, Perdigão e Aurora começam a exportar para o mundo. A maçã catarinense conquista mercados internacionais e SC entra no mapa do agronegócio global.</p></div></div>
+    <div class="tl-item tl-right reveal-right"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2000–10</div><h4>Modernização tecnológica</h4><p>Chegada da agricultura de precisão, máquinas modernas e genética avançada. A Epagri leva pesquisa ao campo. SC aumenta produtividade sem expandir área plantada.</p></div></div>
+    <div class="tl-item tl-left reveal-left"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2020+</div><h4>Sustentabilidade e inovação</h4><p>Tratamento de dejetos, energia biogás, drones e sensores no campo. SC investe em ser referência mundial em agropecuária sustentável e de alta tecnologia.</p></div></div>
+  </div>
+</section>
+
+<!-- ═══ TECH ═══ -->
+<section id="tech">
+  <div class="tech-bg-text" aria-hidden="true">TECH</div>
+  <div class="section-header">
+    <div class="section-tag reveal-up">Inovação</div>
+    <h2 class="section-title reveal-up">O campo<br/><em>inteligente</em></h2>
+    <p class="section-sub reveal-up">Santa Catarina está na vanguarda da agricultura de precisão no Brasil.</p>
+  </div>
+  <div class="tech-grid">
+    <div class="tech-card reveal-up" data-delay="0"><div class="tech-icon-wrap"><div class="tech-icon">🛸</div></div><h4>Drones Agrícolas</h4><p>Monitoramento aéreo com câmeras multiespectrais. Identifica pragas e doenças antes de serem visíveis a olho nu.</p></div>
+    <div class="tech-card reveal-up" data-delay="80"><div class="tech-icon-wrap"><div class="tech-icon">📡</div></div><h4>Sensores IoT</h4><p>Redes de sensores medem umidade, temperatura e nutrientes em tempo real, acessíveis pelo celular de qualquer lugar.</p></div>
+    <div class="tech-card reveal-up" data-delay="160"><div class="tech-icon-wrap"><div class="tech-icon">🧬</div></div><h4>Genética Avançada</h4><p>Seleção genômica de animais de alta produtividade. DNA mapeado garante mais leite, mais carne e mais resistência a doenças.</p></div>
+    <div class="tech-card reveal-up" data-delay="240"><div class="tech-icon-wrap"><div class="tech-icon">♻️</div></div><h4>Biodigestores</h4><p>Dejetos de suínos transformados em biogás e biofertilizante. Energia limpa gerada na própria propriedade rural.</p></div>
+    <div class="tech-card reveal-up" data-delay="320"><div class="tech-icon-wrap"><div class="tech-icon">🗺️</div></div><h4>SIG — Geotecnologia</h4><p>Sistemas de informação geográfica mapeiam solos e clima. Cada talhão recebe a dose certa de fertilizante.</p></div>
+    <div class="tech-card reveal-up" data-delay="400"><div class="tech-icon-wrap"><div class="tech-icon">🤖</div></div><h4>Inteligência Artificial</h4><p>Algoritmos de ML preveem doenças em plantações, otimizam colheita e planejam safras com dados históricos e climáticos.</p></div>
+  </div>
+  <div class="epagri-banner reveal-up">
+    <div class="epagri-text"><h4>Epagri — A ciência do campo catarinense</h4><p>A Empresa de Pesquisa Agropecuária e Extensão Rural de SC leva tecnologia diretamente ao produtor rural há mais de 60 anos.</p></div>
+    <div class="epagri-numbers">
+      <div class="epagri-num"><strong>+300</strong><span>Pesquisadores</span></div>
+      <div class="epagri-num"><strong>+60</strong><span>Anos de atuação</span></div>
+      <div class="epagri-num"><strong>295</strong><span>Municípios atendidos</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHALLENGES ═══ -->
+<section id="challenges">
+  <div class="section-header">
+    <div class="section-tag reveal-up">Desafios</div>
+    <h2 class="section-title reveal-up">Os obstáculos<br/><em>do futuro</em></h2>
+    <p class="section-sub reveal-up">Crescer com responsabilidade exige enfrentar problemas reais.</p>
+  </div>
+  <div class="challenges-layout">
+    <div class="challenge-item reveal-left"><div class="ch-number">01</div><div class="ch-content"><div class="ch-icon">🌡️</div><h4>Mudanças Climáticas</h4><p>Geadas fora de época, secas e chuvas intensas prejudicam lavouras e criações. O produtor precisa adaptar técnicas a um clima imprevisível.</p><div class="ch-impact">Impacto: <span class="impact-alto">Alto</span></div></div></div>
+    <div class="challenge-item reveal-right"><div class="ch-number">02</div><div class="ch-content"><div class="ch-icon">👨‍🌾</div><h4>Êxodo Rural</h4><p>Jovens deixam o campo em busca de oportunidades. A falta de sucessores ameaça o futuro de propriedades familiares.</p><div class="ch-impact">Impacto: <span class="impact-medio">Médio</span></div></div></div>
+    <div class="challenge-item reveal-left"><div class="ch-number">03</div><div class="ch-content"><div class="ch-icon">🌊</div><h4>Impacto Ambiental</h4><p>Tratamento de dejetos de suínos e uso de agrotóxicos exigem avanços em práticas sustentáveis sem perder competitividade.</p><div class="ch-impact">Impacto: <span class="impact-alto">Alto</span></div></div></div>
+    <div class="challenge-item reveal-right"><div class="ch-number">04</div><div class="ch-content"><div class="ch-icon">💱</div><h4>Câmbio e Mercado</h4><p>A valorização do real reduz a competitividade das exportações. Oscilações nas commodities afetam diretamente a renda do produtor.</p><div class="ch-impact">Impacto: <span class="impact-medio">Médio</span></div></div></div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery">
+  <div class="section-header">
+    <div class="section-tag reveal-up">Galeria</div>
+    <h2 class="section-title reveal-up">O campo em<br/><em>imagens</em></h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item gi-large reveal-up" data-delay="0"><img src="assets/images/hero-campo.jpg" alt="Vista aérea" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">🌄<span>hero-campo.jpg</span></div><div class="gi-overlay"><p>Vista aérea das lavouras do oeste ao entardecer</p></div></div>
+    <div class="gallery-item reveal-up" data-delay="60"><img src="assets/images/familia-rural.jpg" alt="Família rural" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">👨‍👩‍👧<span>familia-rural.jpg</span></div><div class="gi-overlay"><p>Família agricultora no oeste catarinense</p></div></div>
+    <div class="gallery-item reveal-up" data-delay="120"><img src="assets/images/colheita-maca.jpg" alt="Colheita maçã" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">🍎<span>colheita-maca.jpg</span></div><div class="gi-overlay"><p>Colheita de maçã em São Joaquim</p></div></div>
+    <div class="gallery-item reveal-up" data-delay="180"><img src="assets/images/drone-lavoura.jpg" alt="Drone" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">🛸<span>drone-lavoura.jpg</span></div><div class="gi-overlay"><p>Monitoramento com drone agrícola</p></div></div>
+    <div class="gallery-item gi-wide reveal-up" data-delay="240"><img src="assets/images/frigorifico.jpg" alt="Frigorífico" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">🏭<span>frigorifico.jpg</span></div><div class="gi-overlay"><p>Linha de produção em frigorífico do oeste</p></div></div>
+    <div class="gallery-item reveal-up" data-delay="300"><img src="assets/images/lavoura-arroz.jpg" alt="Arroz" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">🌾<span>lavoura-arroz.jpg</span></div><div class="gi-overlay"><p>Lavoura de arroz irrigado no sul do estado</p></div></div>
+    <div class="gallery-item reveal-up" data-delay="360"><img src="assets/images/cooperativa.jpg" alt="Cooperativa" loading="lazy" onerror="this.parentElement.classList.add('gi-no-img')"/><div class="gi-no-img-content">🤝<span>cooperativa.jpg</span></div><div class="gi-overlay"><p>Cooperativa agrícola recebendo produção</p></div></div>
+  </div>
+  <div class="img-guide reveal-up">
+    <h4>📂 Guia de imagens — pasta <code>assets/images/</code></h4>
+    <div class="img-guide-grid">
+      <div class="ig-item"><code>hero-campo.jpg</code><span>Vista aérea de lavoura</span></div>
+      <div class="ig-item"><code>suinos.jpg</code><span>Granja / criação de suínos</span></div>
+      <div class="ig-item"><code>frango.jpg</code><span>Aviário / frango de corte</span></div>
+      <div class="ig-item"><code>maca.jpg</code><span>Pomar ou colheita de maçã</span></div>
+      <div class="ig-item"><code>cebola.jpg</code><span>Lavoura de cebola</span></div>
+      <div class="ig-item"><code>arroz.jpg</code><span>Arroz irrigado</span></div>
+      <div class="ig-item"><code>leite.jpg</code><span>Pecuária leiteira / vaca</span></div>
+      <div class="ig-item"><code>familia-rural.jpg</code><span>Família de agricultores</span></div>
+      <div class="ig-item"><code>colheita-maca.jpg</code><span>Colheita de maçã</span></div>
+      <div class="ig-item"><code>drone-lavoura.jpg</code><span>Drone sobrevoando lavoura</span></div>
+      <div class="ig-item"><code>frigorifico.jpg</code><span>Interior de frigorífico</span></div>
+      <div class="ig-item"><code>lavoura-arroz.jpg</code><span>Lavoura de arroz de cima</span></div>
+      <div class="ig-item"><code>cooperativa.jpg</code><span>Caminhões na cooperativa</span></div>
+      <div class="ig-item"><code>video-bg.mp4</code><span>Vídeo de fundo (já incluso)</span></div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="fb-logo">SC</div><div><strong>Agropecuária Catarinense</strong><p>Um trabalho sobre o campo que alimenta o mundo.</p></div></div>
+    <div class="footer-info"><p>Fontes: IBGE · Epagri · Faesc · ABPA · MAPA</p><p>Disciplina de Geografia · 2.° Ano do Ensino Médio · 2025</p></div>
+  </div>
+  <div class="footer-bottom"><span>Santa Catarina · Brasil · 2025</span><span>Feito com 🌿 e muito conhecimento</span></div>
+</footer>
+
+<script src="js/video-scrub.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
